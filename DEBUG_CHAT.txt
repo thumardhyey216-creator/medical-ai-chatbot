@@ -1,0 +1,18 @@
+Quick debugging guide:
+
+1. Open browser console (F12)
+2. Go to Network tab
+3. Send a chat message (e.g., "what is aspirin?")
+4. Look for the request to `/api/chat/message`
+5. Check:
+   - Status code (should be 200)
+   - Response body
+   - Any errors in console
+
+Common issues:
+- 401: Not logged in (refresh and login again)
+- 500: Server error (check server logs)
+- CORS: Wrong origin
+- Empty response: Context retrieval failed
+
+I'm watching the server logs in real-time. Please try one more message.
